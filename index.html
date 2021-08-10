@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize Icons Link  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--My CSS LINK-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+                
+        <title>Brain Breaks</title>
+    <!-- Swiper JS Link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="icon" type="image/png" href="Assets/imgs/favicon.ico" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="music-controls" id="mute-video">
+            <p>Music</p>
+            <i class="material-icons" id="play-music">play_arrow</i>
+            <i class="material-icons" id="mute-music">pause</i>
+        </div>
+        <!-- Welcome Page  -->
+        <section class="section row" id="welcome">
+            <h1>Brain Breaks</h1>
+            <div>
+                <h4>Enter your name:</h4>
+                <form>
+                    <div class="input-field">
+                        <input class="entername" placeholder="name" id="first_name2" type="text" class="validate"
+                        required>
+                    </div>
+                    <a class="waves-effect waves-light btn disabled" id="submitname" value="submit"
+                    type="submit">Save</a>
+                </form>
+                <p id="welcome-alert"></p>
+            </div>
+        </section>
+          <!-- Set Time Screen  -->
+        <section class="section row" id="set_time">
+            <header>
+                <h4>How long would you like to focus?</h4></br>
+            </header>
+            <figure class="clock">
+                <div class="mins">0</div>
+                <div>:</div>
+                <div class="secs">00</div>
+                <audio
+                  src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+                ></audio>
+                <svg class="progress-ring" height="120" width="120">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke-width="8"
+                    fill="transparent"
+                    r="50"
+                    cx="60"
+                    cy="60"
+                  />
+                </svg>
+              </figure>
+          
+              <div class="btn-group">
+                <button class="start">start focus</button>
+                <button class="reset">reset</button>
+                <button class="pause">pause</button>
+              </div>
+          
+              <form action=".">
+                <label for="focusTime">Focus Time</label>
+                <input type="number" value="1" id="focusTime" />
+                <label for="breakTime">Break Time</label>
+                <input type="number" value="1" id="breakTime" />
+                <button type="submit">Save settings</button>
+              </form>
+                         
+        </section>
+        <!-- Brain Break Page WHOOOO!!!  -->
+        <section class="section row" id="break-page">
+            <h2 id="good-job">Good Job! Now take a Break !</h2>
+            <img src="imgs/guess-what-its-break-time.jpeg" id="break-img">
+            <body>
+                <section>
+                  <h1 class="title">Got Jokes???</h1>
+                  <div class="container">
+                    <div class="joke">
+                      <p></p>
+                    </div>
+                    <button>Get a Joke</button>
+                  </div>
+                </section>
+              
+                        
+                
+              
+              </body>
+
+            <button class="btn" onclick="snd.play()" id="break-button">Take my break</button>
+
+        </section>
+        <script src="Assets/youtube2.js"></script>
+    <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/welcome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./assets/script/usermeme.js"></script>
+    <script src="Assets/sound.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="./assets/script/meme-viewer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="Assets/joke.js"></script>
+
+    <script src="Assets/welcome.js"></script>
+    
+    <script src="Assets/settings.js"></script>
+    <script src="Assets/timer.js"></script>
+    <script src="Assets/progress.js"></script>
+    
+    
+    
+</body>
+</div>
+
+</html>
